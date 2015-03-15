@@ -1,0 +1,67 @@
+//Adrian: This file contains the credits info for both the Intro and outro.
+"credits.txt"
+{
+
+//========================================================
+//These are the names used in the intro (trainride)
+//========================================================
+"IntroCreditsNames"
+{
+	"V"	"WeaponIcons"
+	" "	"CreditsText"
+	" "	"CreditsText"
+	"Stan Riders"   "CreditsText"
+	"Levan"    "CreditsText"
+	"Aluminum Ken"    "CreditsText"
+}
+
+"CreditsParams"
+{
+	"fadeintime"	"2.5"
+	"fadeouttime"	"1"
+	"fadeholdtime"	"1.0"
+	"nextfadetime"	"1.0"
+	"pausebetweenwaves" "1.0"
+	"logotime" "1.0"
+	"posx"	"96"
+	"posy"	"360"
+
+	"color" "255 255 255 128"
+
+//Outro Parameters
+	"scrolltime" "158"
+	"separation"  "10"
+}
+
+//========================================================
+//These are the names used in the outro (breen_01)
+//========================================================
+"OutroCreditsNames"
+{
+	"HALF-LIFE'"	"CreditsOutroLogos"
+	" "	"CreditsOutroText"
+	"V"	"CreditsOutroLogos"
+	" "	"CreditsOutroText"
+	"Valve Software"   "CreditsOutroText"
+	" "	"CreditsOutroText"
+	" "	"CreditsOutroText"
+	"HL2 -> ASW PORT BY"   "CreditsOutroText"
+	"Stan Riders aka Strider[RUS]"   "CreditsOutroText"
+	" "	"CreditsOutroText"
+	" "	"CreditsOutroText"
+	" "	"CreditsOutroText"
+	"Big thanks to"    "CreditsOutroText"
+	"Andrey 'AndreaZzZ' Perevozchikov"    "CreditsOutroText"
+	"Anton 'Levan' Levchuk"    "CreditsOutroText"
+	"Ken 'Aluminum Ken' Chan"    "CreditsOutroText"
+	"Vladimir 'Hopeless CatE' Rojkov"    "CreditsOutroText"
+	"Alien Swarm Developement Team"    "CreditsOutroText"
+	"And many others..."   "CreditsOutroText"
+	" "	"CreditsOutroText"
+	" "	"CreditsOutroText"
+	"@"	"CreditsOutroLogos"
+}
+
+
+
+}

@@ -1,0 +1,49 @@
+// Response file to make actors respond to player specific player actions
+
+criterion "IsVortLabUseDisable" "VortLab_Enable" "0" weight 2 required
+criterion "IsVortLabUseEnable" "VortLab_Enable" "1" weight 2 required
+criterion "IsVortLabUseEnable_Bugfix" "VortLab_Enable_Bugfix" "1" weight 2 required
+
+
+response "VortLabUsedisable"
+{
+	scene "scenes\eli_lab\vort_elab_goaway.vcd"
+	//scene "scenes\eli_lab\vort_elab_goaway_test.vcd"
+}
+
+rule IsVortLabUseDisable
+{
+	criteria		ConceptTalkUse IsVortLabUseDisable NPCIdle
+	
+	response		VortLabUsedisable
+}
+
+
+
+response "VortLabUseEnable"
+{
+	scene "scenes\eli_lab\vort_elab_use01.vcd"
+	scene "scenes\eli_lab\vort_elab_use02.vcd"
+	scene "scenes\eli_lab\vort_elab_use03.vcd"
+	scene "scenes\eli_lab\vort_elab_use04.vcd"
+	scene "scenes\eli_lab\vort_elab_use05.vcd"
+}
+
+rule IsVortLabUseEnable
+{
+	criteria		ConceptTalkUse IsVortLabUseEnable NPCIdle
+	
+	response		VortLabUseEnable
+}
+
+response "VortLabUseEnable_Bugfix"
+{
+	scene "scenes\eli_lab\vort_elab_use05_bugfix.vcd"
+}
+
+rule IsVortLabUseEnable_Bugfix
+{
+	criteria		ConceptTalkUse IsVortLabUseEnable_Bugfix NPCIdle
+	
+	response		VortLabUseEnable_Bugfix
+}

@@ -1,0 +1,190 @@
+map: default
+	vbsp:
+	vvis:	-mpi 
+	vrad:	-final -staticproppolys -staticproplighting -textureshadows -both -mpi 
+
+map: devtest_01b
+	vbsp:
+	vvis:	-mpi 
+	vrad:   -both -mpi 
+
+map: ep2_outland_01
+	vbsp:
+	vvis:	-mpi
+	vrad:	-final -staticproppolys -staticproplighting -textureshadows -both -mpi
+
+map: ep2_outland_01a
+	vbsp:
+	vvis:	-mpi
+	vrad:	-final -dispchop 2 -staticproppolys -staticproplighting -textureshadows -both -mpi 
+
+
+map: ep2_outland_02
+	vbsp:
+	vvis:	-mpi
+	vrad:	-final -dispchop 2 -staticproppolys -staticproplighting -textureshadows -both -mpi 
+
+map: ep2_outland_03
+	vbsp:
+	vvis:	-mpi
+	vrad:	-final -dispchop 2 -staticproppolys -staticproplighting -textureshadows -both -mpi 
+
+map: ep2_outland_04
+	vbsp:
+	vvis:	-mpi
+	vrad:	-final -dispchop 2 -staticproppolys -staticproplighting -textureshadows -both -mpi 
+
+map: ep2_outland_05
+	vbsp:
+	vvis:	-mpi
+	vrad:	-final -staticproppolys -staticproplighting -textureshadows -both -mpi 
+
+map: ep2_outland_06
+	vbsp:
+	vvis:	-mpi
+	vrad:	-final -staticproppolys -staticproplighting -textureshadows -both -mpi 
+
+map: ep2_outland_06a
+	vbsp:
+	vvis:	-mpi
+	vrad:	-final -staticproppolys -staticproplighting -textureshadows -both -mpi 
+
+map: ep2_outland_07
+	vbsp:
+	vvis:	-mpi
+	vrad:	-final -staticproppolys -staticproplighting -textureshadows -both -mpi 
+
+map: ep2_outland_08
+	vbsp:
+	vvis:	-mpi
+	vrad:	-final -staticproppolys -staticproplighting -textureshadows -both -mpi 
+
+map: ep2_outland_09
+	vbsp:
+	vvis:	-mpi
+	vrad:	-final -staticproppolys -staticproplighting -textureshadows -both -mpi 
+
+map: ep2_outland_10
+	vbsp:
+	vvis:	-mpi
+	vrad:	-final -staticproppolys -staticproplighting -textureshadows -both -mpi 
+
+map: ep2_outland_10a
+	vbsp:
+	vvis:	-mpi 
+	vrad:	-final -staticproppolys -staticproplighting -textureshadows -both -mpi 
+
+map: ep2_outland_11
+	vbsp:
+	vvis:	-mpi
+	vrad:	-final -staticproppolys -staticproplighting -textureshadows -both -mpi 
+
+map: ep2_outland_11a
+	vbsp:
+	vvis:	-mpi
+	vrad:	-final -staticproppolys -staticproplighting -textureshadows -both -mpi 
+
+map: ep2_outland_11b
+	vbsp:
+	vvis:	-mpi
+	vrad:	-final -staticproppolys -staticproplighting -textureshadows -both -mpi 
+
+map: ep2_outland_12
+	vbsp:
+	vvis:	-mpi
+	vrad:	-final -staticproppolys -staticproplighting -textureshadows -both -mpi 
+
+map: ep2_outland_12a
+	vbsp:
+	vvis:	-mpi
+	vrad:	-final -staticproppolys -staticproplighting -textureshadows -both -mpi 
+
+map: styleguide_logging
+	vbsp:
+	vvis:	-fast -mpi 
+	vrad:	-staticproppolys -staticproplighting -both -mpi 
+
+map: ep2_demo_05
+	vbsp:
+	vvis:	-mpi
+	vrad:	-staticproppolys -staticproplighting -textureshadows -hdr -mpi 
+
+map: ep2_demo_06a
+	vbsp:
+	vvis:	-mpi  -fast
+	vrad:	-staticproppolys -staticproplighting -textureshadows -hdr -mpi 
+
+map: ep2_demo_10
+	vbsp:
+	vvis:	-mpi  -fast
+	vrad:	-staticproppolys -staticproplighting -textureshadows -both -mpi 
+
+map: ep2_demo_antlions
+	vbsp:
+	vvis:   -mpi 
+	vrad:	-staticproppolys -staticproplighting -both -final -mpi 
+
+map: ep2_demo_guard
+	vbsp:
+	vvis:	-mpi 
+	vrad:	-staticproppolys -staticproplighting -both -final -mpi 
+
+map: ep2_demo_chopper
+	vbsp:
+	vvis:	-fast -mpi 
+	vrad:	-both -final -mpi 
+
+map: ep2_demo_driving
+	vbsp:
+	vvis:	-fast -mpi 
+	vrad:	-both -final -mpi 
+
+map: ep2_demo_dog
+	vbsp:
+	vvis:	-fast -mpi 
+	vrad:	-both -final -mpi 
+
+map: ep2_demo_canyon
+	vbsp:
+	vvis:	-fast -mpi 
+	vrad:	-final -both -mpi 
+
+map: ep2_demo_gman
+	vbsp:
+	vvis:	-mpi 
+	vrad:	-staticproppolys -staticproplighting -final -both -mpi 
+
+map: ep2_demo_gman2
+	vbsp:
+	vvis:	-mpi 
+	vrad:	-staticproppolys -staticproplighting -final -both -mpi 
+
+map: ep2_trailer_11a
+	vbsp:
+	vvis:	-fast -mpi 
+	vrad:	-staticproppolys -staticproplighting -both -mpi 
+
+map: ep2_trailer_11a_mossmanshot_1
+	vbsp:
+	vvis:	-fast -mpi 
+	vrad:	-staticproppolys -staticproplighting -both -mpi 
+
+map: ep2_demo_01
+	vbsp:
+	vvis:	-mpi  -fast
+	vrad:	-dispchop 2 -staticproppolys -staticproplighting -textureshadows -hdr -mpi 
+
+map: ep2_demo_02
+	vbsp:
+	vvis:	-mpi
+	vrad:	-dispchop 2 -staticproppolys -staticproplighting -textureshadows -hdr -mpi 
+
+map: ep2_demo_07
+	vbsp:
+	vvis:	-mpi  -fast
+	vrad:	-staticproppolys -staticproplighting -textureshadows -hdr -mpi 
+
+map: ep2_demo_08
+	vbsp:
+	vvis:	-mpi  -fast
+	vrad:	-staticproppolys -staticproplighting -textureshadows -hdr -mpi 

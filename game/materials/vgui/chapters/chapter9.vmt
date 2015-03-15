@@ -1,0 +1,6 @@
+//"LightmappedGeneric"
+"UnlitGeneric"
+{
+	"$baseTexture" "vgui/chapters/chapter9"
+	"$vertexalpha" 1
+}

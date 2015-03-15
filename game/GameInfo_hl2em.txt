@@ -1,0 +1,42 @@
+"GameInfo"
+{
+	"game"		"HL2 ASW Engine"			// Game title in Steam
+	"title"		"Title In Gameinfo.txt"			// Change me!
+	"type"		"singleplayer_only"
+	"icon"		"icon"					// Icon in Steam
+
+	"developer"	"Strider[RUS] with help of AndreaZzZ, Aluminum Ken, Levan, Hopeless CatE and many others..."
+	"developer_url"	"https://code.google.com/p/asw-hl2-port"
+
+	GameData	"swarm.fgd"
+	SupportsDX8     0
+	
+	"FileSystem"
+	{
+		"SteamAppId"		"282840"				// Half-Life 2: Enchancement Mod (thanks to Ken for a hl2:em beta and for the main idea of using his content!)
+		"SearchPaths"
+		{
+			"Game"	"|gameinfo_path|."
+
+			"Game"  "hl2em_base"					// HL2:EM Base Folder
+
+
+			// Default ("./") path for HL2EM is "/steamapps/common/Half Life 2 Enhancement Mod", so we can easily go up and mount HL2 content
+			"Game"	"../Half-Life 2/ep2"				// This is workaround for ep2 maps mounting
+			"Game"	"../Half-Life 2/episodic"			// This is workaround for ep1 maps mounting
+			"Game"	"../Half-Life 2/hl2"				// This is workaround for hl2 maps mounting
+
+			// Just let it be. Maybe it'll help.
+			"Game"	"|all_source_engine_paths|ep2"			// Episode 2 Folder
+			"Game"	"|all_source_engine_paths|episodic"		// Episode 1 Folder
+			"Game"	"|all_source_engine_paths|hl2"			// Half-Life 2 Folder
+
+			// Base ASW stuff.
+			"Game"	"../Alien Swarm/swarm"				// Alien Swarm Folder
+			"Game"	"../Alien Swarm/swarm_base"			// ASW Base Folder
+
+
+			"Game"	"platform"
+		}
+	}
+}

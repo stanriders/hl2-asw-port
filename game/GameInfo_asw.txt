@@ -1,0 +1,43 @@
+"GameInfo"
+{
+	"game"		"HL2 ASW Engine"			// Game title in Steam
+	"title"		"Title In Gameinfo.txt"			// Change me!
+	"type"		"singleplayer_only"
+	"icon"		"icon"					// Icon in Steam
+
+	"developer"	"Strider[RUS] with help of AndreaZzZ, Aluminum Ken, Levan, Hopeless CatE and many others..."
+	"developer_url"	"https://code.google.com/p/asw-hl2-port"
+
+	GameData	"swarm.fgd"
+	SupportsDX8     0
+	
+	"FileSystem"
+	{
+		"SteamAppId"		"630"			// Alien Swarm
+		"SearchPaths"
+		{
+			"Game"	"|gameinfo_path|."
+
+			// Default ("./") path for ASW is "/steamapps/common/Alien Swarm", so we can easily go up and mount SFM content
+			// TODO: Better solution if possible.
+			"Game"	"../SourceFilmmaker/game/ep2_workshop"		// This is workaround for ep2 content mounting
+			"Game"	"../SourceFilmmaker/game/episodic_workshop"	// This is workaround for ep1 content mounting
+			"Game"	"../SourceFilmmaker/game/hl2"			// This is workaround for hl2 content mounting
+
+			"Game"	"../Half-Life 2/ep2"				// This is workaround for ep2 maps mounting
+			"Game"	"../Half-Life 2/episodic"			// This is workaround for ep1 maps mounting
+			"Game"	"../Half-Life 2/hl2"				// This is workaround for hl2 maps mounting
+
+			// Just let it be. Maybe it'll help.
+			"Game"	"|all_source_engine_paths|ep2"			// Episode 2 Folder
+			"Game"	"|all_source_engine_paths|episodic"		// Episode 1 Folder
+			"Game"	"|all_source_engine_paths|hl2"			// Half-Life 2 Folder
+
+			// Base ASW stuff.
+			"Game"	"swarm"						// Alien Swarm Folder
+			"Game"	"swarm_base"					// ASW Base Folder
+
+			"Game"	"platform"
+		}
+	}
+}
