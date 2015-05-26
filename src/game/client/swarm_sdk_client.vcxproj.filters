@@ -91,6 +91,15 @@
     <Filter Include="Source Files\HL2 Client\VGUI\GameUI\SP">
       <UniqueIdentifier>{5dbd78c4-e703-4eff-a47d-dafa16e0f659}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\HL2 Client\VGUI\GameUI\Generic\Headers">
+      <UniqueIdentifier>{f52404b5-13c9-4448-9d8a-716019a845c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\HL2 Client\VGUI\GameUI\Settings\Headers">
+      <UniqueIdentifier>{9037ff3c-2694-465e-a5b5-fcfcce0d8cd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\HL2 Client\VGUI\GameUI\SP\Headers">
+      <UniqueIdentifier>{7cf2427d-3c33-4d5a-9d00-ee6c25bc5704}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="client_base.vpc">
@@ -3970,72 +3979,6 @@
     <ClInclude Include="hl2\gameui\hl2\vattractscreen.h">
       <Filter>Source Files\HL2 Client\VGUI\GameUI</Filter>
     </ClInclude>
-    <ClInclude Include="hl2\gameui\hl2\vgenericconfirmation.h">
-      <Filter>Source Files\HL2 Client\VGUI\GameUI\Generic</Filter>
-    </ClInclude>
-    <ClInclude Include="hl2\gameui\hl2\vgenericpanellist.h">
-      <Filter>Source Files\HL2 Client\VGUI\GameUI\Generic</Filter>
-    </ClInclude>
-    <ClInclude Include="hl2\gameui\hl2\vgenericwaitscreen.h">
-      <Filter>Source Files\HL2 Client\VGUI\GameUI\Generic</Filter>
-    </ClInclude>
-    <ClInclude Include="hl2\gameui\hl2\vhybridbutton.h">
-      <Filter>Source Files\HL2 Client\VGUI\GameUI\Generic</Filter>
-    </ClInclude>
-    <ClInclude Include="hl2\gameui\hl2\vingamemainmenu.h">
-      <Filter>Source Files\HL2 Client\VGUI\GameUI\Generic</Filter>
-    </ClInclude>
-    <ClInclude Include="hl2\gameui\hl2\vloadingprogress.h">
-      <Filter>Source Files\HL2 Client\VGUI\GameUI\Generic</Filter>
-    </ClInclude>
-    <ClInclude Include="hl2\gameui\hl2\vmainmenu.h">
-      <Filter>Source Files\HL2 Client\VGUI\GameUI\Generic</Filter>
-    </ClInclude>
-    <ClInclude Include="hl2\gameui\hl2\vtransitionscreen.h">
-      <Filter>Source Files\HL2 Client\VGUI\GameUI\Generic</Filter>
-    </ClInclude>
-    <ClInclude Include="hl2\gameui\hl2\vfooterpanel.h">
-      <Filter>Source Files\HL2 Client\VGUI\GameUI\Generic</Filter>
-    </ClInclude>
-    <ClInclude Include="hl2\gameui\hl2\vdropdownmenu.h">
-      <Filter>Source Files\HL2 Client\VGUI\GameUI\Generic</Filter>
-    </ClInclude>
-    <ClInclude Include="hl2\gameui\hl2\vachievements.h">
-      <Filter>Source Files\HL2 Client\VGUI\GameUI\Settings</Filter>
-    </ClInclude>
-    <ClInclude Include="hl2\gameui\hl2\vaudio.h">
-      <Filter>Source Files\HL2 Client\VGUI\GameUI\Settings</Filter>
-    </ClInclude>
-    <ClInclude Include="hl2\gameui\hl2\vcontrolleroptions.h">
-      <Filter>Source Files\HL2 Client\VGUI\GameUI\Settings</Filter>
-    </ClInclude>
-    <ClInclude Include="hl2\gameui\hl2\vcontrolleroptionsbuttons.h">
-      <Filter>Source Files\HL2 Client\VGUI\GameUI\Settings</Filter>
-    </ClInclude>
-    <ClInclude Include="hl2\gameui\hl2\vcontrolleroptionssticks.h">
-      <Filter>Source Files\HL2 Client\VGUI\GameUI\Settings</Filter>
-    </ClInclude>
-    <ClInclude Include="hl2\gameui\hl2\vkeyboard.h">
-      <Filter>Source Files\HL2 Client\VGUI\GameUI\Settings</Filter>
-    </ClInclude>
-    <ClInclude Include="hl2\gameui\hl2\vkeyboardmouse.h">
-      <Filter>Source Files\HL2 Client\VGUI\GameUI\Settings</Filter>
-    </ClInclude>
-    <ClInclude Include="hl2\gameui\hl2\voptions.h">
-      <Filter>Source Files\HL2 Client\VGUI\GameUI\Settings</Filter>
-    </ClInclude>
-    <ClInclude Include="hl2\gameui\hl2\vvideo.h">
-      <Filter>Source Files\HL2 Client\VGUI\GameUI\Settings</Filter>
-    </ClInclude>
-    <ClInclude Include="hl2\gameui\hl2\vslidercontrol.h">
-      <Filter>Source Files\HL2 Client\VGUI\GameUI\Generic</Filter>
-    </ClInclude>
-    <ClInclude Include="hl2\gameui\hl2\vspinnercontrol.h">
-      <Filter>Source Files\HL2 Client\VGUI\GameUI\Generic</Filter>
-    </ClInclude>
-    <ClInclude Include="hl2\gameui\hl2\vgameoptions.h">
-      <Filter>Source Files\HL2 Client\VGUI\GameUI\Settings</Filter>
-    </ClInclude>
     <ClInclude Include="hl2\vgui\nb_header_footer.h">
       <Filter>Source Files\HL2 Client\VGUI\GameUI\VGUI</Filter>
     </ClInclude>
@@ -4045,32 +3988,98 @@
     <ClInclude Include="hl2\vgui\nb_button.h">
       <Filter>Source Files\HL2 Client\VGUI\GameUI\VGUI</Filter>
     </ClInclude>
-    <ClInclude Include="hl2\gameui\hl2\vflyoutmenu.h">
-      <Filter>Source Files\HL2 Client\VGUI\GameUI\Generic</Filter>
-    </ClInclude>
     <ClInclude Include="hl2\gameui\hl2\gamemodes.h">
       <Filter>Source Files\HL2 Client\VGUI\GameUI</Filter>
     </ClInclude>
     <ClInclude Include="hl2\gameui\hl2\uiavatarimage.h">
       <Filter>Source Files\HL2 Client\VGUI\GameUI</Filter>
     </ClInclude>
-    <ClInclude Include="hl2\gameui\hl2\vsavegamedialog.h">
-      <Filter>Source Files\HL2 Client\VGUI\GameUI\SP</Filter>
-    </ClInclude>
     <ClInclude Include="hl2\gameui\hl2\ui_defines.h">
       <Filter>Source Files\HL2 Client\VGUI\GameUI</Filter>
     </ClInclude>
-    <ClInclude Include="hl2\gameui\hl2\vloadgamedialog.h">
-      <Filter>Source Files\HL2 Client\VGUI\GameUI\SP</Filter>
-    </ClInclude>
-    <ClInclude Include="hl2\gameui\hl2\vgameplaysettings.h">
-      <Filter>Source Files\HL2 Client\VGUI\GameUI\SP</Filter>
-    </ClInclude>
-    <ClInclude Include="hl2\gameui\hl2\vsingleplayer.h">
-      <Filter>Source Files\HL2 Client\VGUI\GameUI\SP</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\public\filesystem_passthru.h">
       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hl2\gameui\hl2\vdropdownmenu.h">
+      <Filter>Source Files\HL2 Client\VGUI\GameUI\Generic\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="hl2\gameui\hl2\vflyoutmenu.h">
+      <Filter>Source Files\HL2 Client\VGUI\GameUI\Generic\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="hl2\gameui\hl2\vfooterpanel.h">
+      <Filter>Source Files\HL2 Client\VGUI\GameUI\Generic\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="hl2\gameui\hl2\vgenericconfirmation.h">
+      <Filter>Source Files\HL2 Client\VGUI\GameUI\Generic\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="hl2\gameui\hl2\vgenericpanellist.h">
+      <Filter>Source Files\HL2 Client\VGUI\GameUI\Generic\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="hl2\gameui\hl2\vgenericwaitscreen.h">
+      <Filter>Source Files\HL2 Client\VGUI\GameUI\Generic\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="hl2\gameui\hl2\vhybridbutton.h">
+      <Filter>Source Files\HL2 Client\VGUI\GameUI\Generic\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="hl2\gameui\hl2\vingamemainmenu.h">
+      <Filter>Source Files\HL2 Client\VGUI\GameUI\Generic\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="hl2\gameui\hl2\vloadingprogress.h">
+      <Filter>Source Files\HL2 Client\VGUI\GameUI\Generic\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="hl2\gameui\hl2\vmainmenu.h">
+      <Filter>Source Files\HL2 Client\VGUI\GameUI\Generic\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="hl2\gameui\hl2\vslidercontrol.h">
+      <Filter>Source Files\HL2 Client\VGUI\GameUI\Generic\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="hl2\gameui\hl2\vspinnercontrol.h">
+      <Filter>Source Files\HL2 Client\VGUI\GameUI\Generic\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="hl2\gameui\hl2\vtransitionscreen.h">
+      <Filter>Source Files\HL2 Client\VGUI\GameUI\Generic\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="hl2\gameui\hl2\vachievements.h">
+      <Filter>Source Files\HL2 Client\VGUI\GameUI\Settings\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="hl2\gameui\hl2\vaudio.h">
+      <Filter>Source Files\HL2 Client\VGUI\GameUI\Settings\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="hl2\gameui\hl2\vcontrolleroptions.h">
+      <Filter>Source Files\HL2 Client\VGUI\GameUI\Settings\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="hl2\gameui\hl2\vcontrolleroptionsbuttons.h">
+      <Filter>Source Files\HL2 Client\VGUI\GameUI\Settings\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="hl2\gameui\hl2\vcontrolleroptionssticks.h">
+      <Filter>Source Files\HL2 Client\VGUI\GameUI\Settings\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="hl2\gameui\hl2\vgameoptions.h">
+      <Filter>Source Files\HL2 Client\VGUI\GameUI\Settings\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="hl2\gameui\hl2\vkeyboard.h">
+      <Filter>Source Files\HL2 Client\VGUI\GameUI\Settings\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="hl2\gameui\hl2\vkeyboardmouse.h">
+      <Filter>Source Files\HL2 Client\VGUI\GameUI\Settings\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="hl2\gameui\hl2\voptions.h">
+      <Filter>Source Files\HL2 Client\VGUI\GameUI\Settings\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="hl2\gameui\hl2\vvideo.h">
+      <Filter>Source Files\HL2 Client\VGUI\GameUI\Settings\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="hl2\gameui\hl2\vgameplaysettings.h">
+      <Filter>Source Files\HL2 Client\VGUI\GameUI\SP\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="hl2\gameui\hl2\vloadgamedialog.h">
+      <Filter>Source Files\HL2 Client\VGUI\GameUI\SP\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="hl2\gameui\hl2\vsavegamedialog.h">
+      <Filter>Source Files\HL2 Client\VGUI\GameUI\SP\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="hl2\gameui\hl2\vsingleplayer.h">
+      <Filter>Source Files\HL2 Client\VGUI\GameUI\SP\Headers</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
