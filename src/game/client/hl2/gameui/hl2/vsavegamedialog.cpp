@@ -223,8 +223,8 @@ void CVBaseSaveGameDialog::OnCommand( const char *command )
 
 				GenericConfirmation::Data_t data;
 
-				data.pWindowTitle = "#L4D360UI_MainMenu_Quit_Confirm"; //valve surely use strange namings...[str]
-				data.pMessageText = "#L4D360UI_MainMenu_Quit_ConfirmMsg";
+				data.pWindowTitle = "#GameUI_ConfirmOverwriteSaveGame_Title"; //valve surely use strange namings...[str]
+				data.pMessageText = "#GameUI_ConfirmOverwriteSaveGame_Info";
 
 				data.bOkButtonEnabled = true;
 				data.pfnOkCallback = &AcceptSaveOverwriteCallback;
@@ -401,6 +401,7 @@ void CVBaseSaveGameDialog::AddSaveGameItemToList( int saveIndex )
 	CSaveGamePanel *saveGamePanel = new CSaveGamePanel( m_pGameList, "SaveGamePanel", saveIndex );
 	saveGamePanel->SetSaveGameInfo( m_SaveGames[saveIndex] );
 	m_pGameList->AddItem( NULL, saveGamePanel );
+	InvalidateLayout();
 }
 
 //-----------------------------------------------------------------------------

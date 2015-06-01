@@ -418,10 +418,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Lucida Console" [!$OSX]
-				"name"		"Lucida Grande" [$OSX]
-				"tall"		"10" [!$OSX]
-				"tall"		"12" [$OSX]
+				"name"		"Lucida Console" 
+				"tall"		"10" 
 				"weight"	"500"
 			}
 		}
@@ -1023,6 +1021,5 @@ Scheme
 	CustomFontFiles [!$X360]
 	{
 		"1"		"resource/HALFLIFE2.vfont"	
-		"2"		"vgui/fonts/marlett.ttf"	[$OSX]
 	}
 }

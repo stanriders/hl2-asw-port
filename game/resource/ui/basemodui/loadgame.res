@@ -60,7 +60,25 @@
 		"font"		"DefaultMedium"
 		"fgcolor_override"		"113 142 181 255"
 	}
-	
+	"Delete"
+	{
+		"ControlName"		"CNB_Button"
+		"fieldName"		"Delete"
+		"xpos"		"r-106"
+        "ypos"		"r23"
+		"wide"		"117"
+		"tall"		"27"
+		"zpos"		"1"
+		"visible"				"1"
+		"enabled"				"1"
+		"tabPosition"			"0"
+		"labelText"		"#GameUI_Delete"
+		"textAlignment"		"center"
+		"Command"		"Delete"
+		"textAlignment"		"center"
+		"font"		"DefaultMedium"
+		"fgcolor_override"		"113 142 181 255"
+	}
 	"BtnCancel" [$WIN32]
 	{
 		"ControlName"			"CNB_Button"

@@ -1,4 +1,4 @@
-//======== Copyright © 2013-2014, Stan Riders aka Strider[RUS], All rights reserved. ===========//
+//======== Copyright © 2013-2015, Stan Riders aka Strider[RUS], All rights reserved. ===========//
 //
 // Purpose: HL2Port UI-related defines.
 #ifndef __UIDEFINES_H__
@@ -15,6 +15,7 @@
 //#define UI_USING_TRANSITIONBG							// using background image in transition between levels
 #define UI_USING_DEVCOMMENTARIES						// implement!!!
 #define UI_USING_GAMEPLAYCONFIGDIALOG					// "gameplay" menu
+//#define UI_USING_MAINMENUMUSIC						// main menu background music ("Misc.MainUI" by default)
 
 // --- UI colors (random shades of gray for now)
 #define UI_STYLE_ENABLED5			169, 169, 169, 255	// style5

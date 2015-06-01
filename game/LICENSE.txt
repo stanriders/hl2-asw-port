@@ -1,7 +1,7 @@
 HL2 -> ASW Engine Port. 
-https://code.google.com/p/asw-hl2-port/
+https://github.com/stanriders/hl2-asw-port
 
-Copyright (c) 2012-2014 Stan Riders aka Strider[RUS]
+Copyright (c) 2012-2015 Stan Riders aka Strider[RUS]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

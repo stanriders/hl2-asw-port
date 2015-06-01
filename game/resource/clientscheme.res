@@ -697,60 +697,6 @@ Scheme
 		}
 
 	}
-
-	//
-	//////////////////// BORDERS //////////////////////////////
-	//
-	// describes all the border types
-	Borders
-	{
-		GrayDialogBorder
-		{
-			"bordertype"			"scalable_image"
-			"backgroundtype"		"2"
-			
-			"image"					"btn_bg"
-			"src_corner_height"		"16"				// pixels inside the image
-			"src_corner_width"		"16"
-			"draw_corner_width"		"8"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"8"
-		}
-		OutlinedGreyBox
-		{
-			"bordertype"			"scalable_image"
-			"backgroundtype"		"2"
-			
-			"image"					"btn_bg"
-			"src_corner_height"		"16"				// pixels inside the image
-			"src_corner_width"		"16"
-			"draw_corner_width"		"8"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"8"
-		}
-		OutlinedDullGreyBox
-		{
-			"bordertype"			"scalable_image"
-			"backgroundtype"		"2"
-			
-			"image"					"btn_bg"
-			"src_corner_height"		"16"				// pixels inside the image
-			"src_corner_width"		"16"
-			"draw_corner_width"		"8"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"8"
-		}
-
-		ItemBaseBorder
-		{
-			"bordertype"			"scalable_image"
-			"backgroundtype"		"2"
-			
-			"image"					"btn_bg"
-			"src_corner_height"		"23"				// pixels inside the image
-			"src_corner_width"		"23"
-			"draw_corner_width"		"5"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"5"	
-		}
-	}
-
 	//////////////////////// CUSTOM FONT FILES /////////////////////////////
 	//
 	// specifies all the custom (non-system) font files that need to be loaded to service the above described fonts

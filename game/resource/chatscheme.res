@@ -45,7 +45,7 @@ Scheme
 		Button.BgColor					"Blank"
 		Button.ArmedTextColor			"White"
 		Button.ArmedBgColor				"Blank"				[$WIN32]
-		Button.ArmedBgColor				"190 115 0 255"		[$GAMECONSOLE]
+		Button.ArmedBgColor				"190 115 0 255"		[$X360]
 		Button.DepressedTextColor		"White"
 		Button.DepressedBgColor			"Blank"
 		Button.FocusBorderColor			"Black"
@@ -68,9 +68,9 @@ Scheme
 		Frame.ClientInsetX				8
 		Frame.ClientInsetY				6
 		Frame.BgColor					"160 160 160 128"	[$WIN32]
-		Frame.BgColor					"80 80 80 192"		[$GAMECONSOLE]
+		Frame.BgColor					"80 80 80 192"		[$X360]
 		Frame.OutOfFocusBgColor			"160 160 160 32"	[$WIN32]
-		Frame.OutOfFocusBgColor			"80 80 80 192"		[$GAMECONSOLE]
+		Frame.OutOfFocusBgColor			"80 80 80 192"		[$X360]
 		Frame.FocusTransitionEffectTime	"0.3"	// time it takes for a window to fade in/out on focus/out of focus
 		Frame.TransitionEffectTime		"0.3"	// time it takes for a window to fade in/out on open/close
 		Frame.AutoSnapRange				"0"
@@ -191,12 +191,12 @@ Scheme
 
 		// scheme-specific colors
 		MainMenu.TextColor			"White"				[$WIN32]
-		MainMenu.TextColor			"200 200 200 255"	[$GAMECONSOLE]
+		MainMenu.TextColor			"200 200 200 255"	[$X360]
 		MainMenu.ArmedTextColor		"200 200 200 255"	[$WIN32]
-		MainMenu.ArmedTextColor		"White"				[$GAMECONSOLE]
+		MainMenu.ArmedTextColor		"White"				[$X360]
 		MainMenu.DepressedTextColor	"192 186 80 255"
 		MainMenu.MenuItemHeight		"16"	[$WIN32]
-		MainMenu.MenuItemHeight		"32"	[$GAMECONSOLE]
+		MainMenu.MenuItemHeight		"32"	[$X360]
 		MainMenu.Inset				"32"
 		MainMenu.Backdrop			"0 0 0 156"
 
@@ -206,7 +206,7 @@ Scheme
 		NewGame.TextColor			"White"
 		NewGame.FillColor			"0 0 0 255"
 		NewGame.SelectionColor		"Orange"	[$WIN32]
-		NewGame.SelectionColor		"0 0 0 255"	[$GAMECONSOLE]
+		NewGame.SelectionColor		"0 0 0 255"	[$X360]
 		NewGame.DisabledColor		"128 128 128 196"
 	}
 

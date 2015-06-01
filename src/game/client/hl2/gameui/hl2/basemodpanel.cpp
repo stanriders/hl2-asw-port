@@ -147,7 +147,10 @@ CBaseModPanel::CBaseModPanel(): BaseClass(0, "CBaseModPanel"),
 	m_iBackgroundImageID = -1;
 	m_iProductImageID = -1;
 
+#ifdef UI_USING_MAINMENUMUSIC
 	m_backgroundMusic = "Misc.MainUI";
+#endif
+
 	m_nBackgroundMusicGUID = 0;
 
 	m_nProductImageWide = 0;

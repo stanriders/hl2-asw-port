@@ -6,9 +6,9 @@
 	"icon"		"icon"					// Icon in Steam
 
 	"developer"	"Strider[RUS] with help of AndreaZzZ, Aluminum Ken, Levan, Hopeless CatE and many others..."
-	"developer_url"	"https://code.google.com/p/asw-hl2-port"
+	"developer_url"	"https://github.com/stanriders/hl2-asw-port"
 
-	GameData	"swarm.fgd"
+	GameData	"halflife2.fgd"
 	SupportsDX8     0
 	
 	"FileSystem"

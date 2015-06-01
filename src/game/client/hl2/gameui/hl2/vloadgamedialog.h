@@ -66,6 +66,8 @@ protected:
 	bool ParseSaveData( char const *pszFileName, char const *pszShortName, SaveGameDescription_t &save );
 
 private:
+	static void DeleteConfirmedCallback();
+
 	CNB_Header_Footer *m_pHeaderFooter;
 	MESSAGE_FUNC( OnPanelSelected, "PanelSelected" );
 };

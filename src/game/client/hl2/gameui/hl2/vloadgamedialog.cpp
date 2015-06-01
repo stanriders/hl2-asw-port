@@ -23,6 +23,8 @@
 #include "nb_header_footer.h"
 #include "nb_button.h"
 
+#include "vGenericConfirmation.h"
+
 // memdbgon must be the last include file in a .cpp file!!!
 #include "tier0/memdbgon.h"
 
@@ -169,8 +171,6 @@ private:
 //-----------------------------------------------------------------------------
 CLoadGameDialog::CLoadGameDialog( vgui::Panel *parent, const char *name ) : BaseClass( parent, name )
 {
-	CreateSavedGamesList();
-	ScanSavedGames();
 	GameUI().PreventEngineHideGameUI();
 
 	m_pHeaderFooter = new CNB_Header_Footer( this, "HeaderFooter" );
@@ -188,8 +188,12 @@ CLoadGameDialog::CLoadGameDialog( vgui::Panel *parent, const char *name ) : Base
 	SetLowerGarnishEnabled( true );
 	SetOkButtonEnabled( false );
 
+	CreateSavedGamesList();
+	ScanSavedGames();
+
 	//new vgui::Button( this, "loadsave", "" );
 	SetControlEnabled( "loadsave", false );
+	SetControlEnabled( "Delete", false );
 }
 //=============================================================================
 CLoadGameDialog::~CLoadGameDialog()
@@ -220,6 +224,38 @@ void CLoadGameDialog::OnCommand( const char *command )
 				// Close this dialog
 				OnClose();
 			}
+		}
+	}
+	else if ( !stricmp( command, "Delete" ) )
+	{
+		int saveIndex = GetSelectedItemSaveIndex();
+		if ( m_SaveGames.IsValidIndex(saveIndex) )
+		{
+				GenericConfirmation* confirmation = 
+				static_cast< GenericConfirmation* >( CBaseModPanel::GetSingleton().OpenWindow( WT_GENERICCONFIRMATION, this, false ) );
+
+				GenericConfirmation::Data_t data;
+
+				data.pWindowTitle = "#GameUI_ConfirmDeleteSaveGame_Title"; //valve surely use strange namings...[str]
+				data.pMessageText = "#GameUI_ConfirmDeleteSaveGame_Info";
+
+				data.bOkButtonEnabled = true;
+				data.pfnOkCallback = &DeleteConfirmedCallback;
+				data.bCancelButtonEnabled = true;
+
+				confirmation->SetUsageData(data);
+		}
+	}
+	else if ( !stricmp( command, "DeleteConfirmed" ) )
+	{
+		int saveIndex = GetSelectedItemSaveIndex();
+		if ( m_SaveGames.IsValidIndex(saveIndex) )
+		{
+			DeleteSaveGame( m_SaveGames[saveIndex].szFileName );
+
+			// reset the list
+			ScanSavedGames();
+			m_pGameList->MoveScrollBarToTop();
 		}
 	}
 	else if( Q_stricmp( "Back", command ) == 0 )
@@ -325,8 +361,9 @@ void CLoadGameDialog::ScanSavedGames()
 		pNoSavesLabel->SetTextColorState(vgui::Label::CS_DULL);
 		m_pGameList->AddItem( NULL, pNoSavesLabel );
 	}
-
+	InvalidateLayout();
 	SetControlEnabled( "loadsave", false );
+	SetControlEnabled( "Delete", false );
 }
 
 //-----------------------------------------------------------------------------
@@ -338,6 +375,7 @@ void CLoadGameDialog::AddSaveGameItemToList( int saveIndex )
 	CSaveGamePanel *saveGamePanel = new CSaveGamePanel( m_pGameList, "SaveGamePanel", saveIndex );
 	saveGamePanel->SetSaveGameInfo( m_SaveGames[saveIndex] );
 	m_pGameList->AddItem( NULL, saveGamePanel );
+	
 }
 extern int VSaveReadNameAndComment( FileHandle_t f, char *name, char *comment );
 //-----------------------------------------------------------------------------
@@ -449,9 +487,10 @@ void CLoadGameDialog::UpdateFooter()
 	CBaseModFooterPanel *footer = BaseModUI::CBaseModPanel::GetSingleton().GetFooterPanel();
 	if ( footer )
 	{
-		footer->SetButtons( FB_ABUTTON | FB_BBUTTON, FF_AB_ONLY, false );
+		footer->SetButtons( FB_ABUTTON | FB_BBUTTON | FB_XBUTTON, FF_ABX_ONLY, false );
 		footer->SetButtonText( FB_ABUTTON, "#L4D360UI_Select" );
 		footer->SetButtonText( FB_BBUTTON, "#L4D360UI_Done" );
+		footer->SetButtonText( FB_XBUTTON, "#GameUI_Delete" );
 	}
 }
 
@@ -483,6 +522,12 @@ void CLoadGameDialog::DeleteSaveGame( const char *fileName )
 void CLoadGameDialog::OnPanelSelected()
 {
 	SetControlEnabled( "loadsave", true );
+	SetControlEnabled( "delete", true );
 }
-
-
+void CLoadGameDialog::DeleteConfirmedCallback()
+{
+	if ( CLoadGameDialog *pLoadGameDialog = static_cast< CLoadGameDialog* >( CBaseModPanel::GetSingleton().GetWindow( WT_MAINMENU ) ) )
+	{
+		pLoadGameDialog->OnCommand( "DeleteConfirmed" );
+	}
+}

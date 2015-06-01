@@ -419,8 +419,7 @@
 		"wide"	 "248"
 		"tall"	 "320"
 
-		"history_gap"	"56" [!$OSX]
-		"history_gap"	"64" [$OSX]
+		"history_gap"	"56"
 		"icon_inset"	"38"
 		"text_inset"	"36"
 		"text_inset"	"26"
